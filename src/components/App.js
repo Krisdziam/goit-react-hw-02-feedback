@@ -1,9 +1,53 @@
-import Vote from "./Vote/Vote";
 
-export const App = () => {
-  return (
-    <>
-    <Vote/>
-    </>
-  );
-};
+import React, { Component } from 'react'
+import FeedbackOptions from './Vote/FeedbackOptions'
+import Statistics from './Vote/Statistics';
+import Section from './Vote/Section';
+import Notification from './Vote/Notification';
+
+export class App extends Component {
+  state = {
+    good: 0,
+    neutral: 0,
+    bad: 0,
+  };
+  countTotal() {
+    const { good, neutral,bad } = this.state;
+    return good + neutral + bad ;
+}
+countPositivvePercentage() {
+    const total = this.countTotal();
+    if (!total) {
+        return 0;
+    }
+   
+    const result = (this.state.good / total) * 100;
+   
+    return Number(result.toFixed(2));
+}
+onLeaveFeedback = propertyName => {
+    this.setState(prevState => {
+      const value = prevState[propertyName];
+      return {
+        [propertyName]: value + 1,
+      };
+    });
+  };
+
+  render() {
+    const { good, neutral, bad } = this.state;
+    const total = this.countTotal()
+    const positiveFeedback = this.countPositivvePercentage()
+    return (
+      <>
+       <Section title={"Please leave feedback"}>
+       <FeedbackOptions onLeaveFeedback={this.onLeaveFeedback} />
+        </Section>
+        <Section title={"Statistics"}>
+{total ? (<Statistics good={good} neutral={neutral} bad={bad} total={total} positivePercentage={positiveFeedback}/>) :       (<Notification message="No feedback given" />)}
+        
+        </Section>
+
+      </>
+    );
+  }}
