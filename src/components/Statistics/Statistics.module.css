@@ -1,0 +1,57 @@
+.commonTitle{
+    text-align: center;
+}
+
+.statistics{
+
+        margin: 0 auto;
+        text-align: center;
+        width: 900px;
+     
+        padding: 50px;
+    
+        background-color: lightblue;
+      
+}
+
+.statCard{
+
+        margin: 0 auto;
+        background-color: darkgrey;
+        width: 700px;
+    
+      
+      
+}
+
+.title{
+    padding-top: 20px;
+   font-size: 40px;
+}
+
+.statList{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+.item{
+    border: 2px solid darkcyan;
+    padding: 20px;
+ 
+    width: 100%;
+}
+
+
+.label{
+    font-style: normal;
+    font-size: 20px;
+}
+
+.percentage{
+    font-weight: bold;
+    font-style: normal;
+    
+    font-size: 24px;
+}

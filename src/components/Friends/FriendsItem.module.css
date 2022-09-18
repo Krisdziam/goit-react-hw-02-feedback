@@ -1,0 +1,32 @@
+
+
+.item {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(214, 220, 221);
+ 
+    box-shadow: 3px 3px 3px rgb(43, 24, 24);
+}
+
+.online, .offline {
+    margin-left: 20px;
+    border-radius: 100%;
+}
+
+.online {
+    border: 10px solid green;
+}
+
+.offline {
+    border: 10px solid red;
+}
+
+.avatar {
+margin: 10px 20px;
+}
+
+.name {
+font-size: 20px;
+    font-weight: bold;
+}
