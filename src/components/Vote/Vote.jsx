@@ -18,6 +18,7 @@ countPositivvePercentage() {
     }
    
     const result = (this.state.good / total) * 100;
+    console.log(result)
     return Number(result.toFixed(2));
 }
   leaveVote = propertyName => {
