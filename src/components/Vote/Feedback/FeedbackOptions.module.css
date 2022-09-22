@@ -1,0 +1,7 @@
+.feedbackBtn{
+    background-color: rgb(235, 149, 149);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px indigo;
+    color: rgb(213, 240, 13);
+    padding: 10px;
+}

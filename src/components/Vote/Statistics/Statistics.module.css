@@ -1,0 +1,13 @@
+/* .statisticsList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.statisticsItem{
+color: rgb(63, 221, 24);
+margin-bottom: 5px;
+font-size: 24px;
+font-weight: bold;
+}
+
