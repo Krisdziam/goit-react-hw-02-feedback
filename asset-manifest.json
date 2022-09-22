@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-02-feedback/static/css/main.d15153e6.css",
+    "main.css": "/goit-react-hw-02-feedback/static/css/main.7b039727.css",
     "main.js": "/goit-react-hw-02-feedback/static/js/main.c9187d15.js",
     "static/media/mogador2017-39.jpg": "/goit-react-hw-02-feedback/static/media/mogador2017-39.a849905d1d382646ffd8.jpg",
     "index.html": "/goit-react-hw-02-feedback/index.html",
-    "main.d15153e6.css.map": "/goit-react-hw-02-feedback/static/css/main.d15153e6.css.map",
+    "main.7b039727.css.map": "/goit-react-hw-02-feedback/static/css/main.7b039727.css.map",
     "main.c9187d15.js.map": "/goit-react-hw-02-feedback/static/js/main.c9187d15.js.map"
   },
   "entrypoints": [
-    "static/css/main.d15153e6.css",
+    "static/css/main.7b039727.css",
     "static/js/main.c9187d15.js"
   ]
 }
