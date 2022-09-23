@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/goit-react-hw-02-feedback/static/css/main.7ea78f62.css",
-    "main.js": "/goit-react-hw-02-feedback/static/js/main.c9187d15.js",
+    "main.js": "/goit-react-hw-02-feedback/static/js/main.c3fac781.js",
     "static/media/zdaniya-goroda-parizha-i-vid-na-eyfelevu-bashnyu-oboi-2048x1536_26.jpg": "/goit-react-hw-02-feedback/static/media/zdaniya-goroda-parizha-i-vid-na-eyfelevu-bashnyu-oboi-2048x1536_26.543366b3c1f71425a61e.jpg",
     "index.html": "/goit-react-hw-02-feedback/index.html",
     "main.7ea78f62.css.map": "/goit-react-hw-02-feedback/static/css/main.7ea78f62.css.map",
-    "main.c9187d15.js.map": "/goit-react-hw-02-feedback/static/js/main.c9187d15.js.map"
+    "main.c3fac781.js.map": "/goit-react-hw-02-feedback/static/js/main.c3fac781.js.map"
   },
   "entrypoints": [
     "static/css/main.7ea78f62.css",
-    "static/js/main.c9187d15.js"
+    "static/js/main.c3fac781.js"
   ]
 }
