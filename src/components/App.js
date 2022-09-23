@@ -25,13 +25,9 @@ countPositivvePercentage() {
    
     return Number(result.toFixed(2));
 }
-onLeaveFeedback = propertyName => {
-    this.setState(prevState => {
-      const value = prevState[propertyName];
-      return {
-        [propertyName]: value + 1,
-      };
-    });
+onLeaveFeedback = (e) => {
+  const btn = e.target.name;
+  this.setState(prevState => ({ [btn]: prevState[btn] + 1 }))
   };
 
   render() {
@@ -41,7 +37,7 @@ onLeaveFeedback = propertyName => {
     return (
       <>
        <Section title={"Please leave feedback"}>
-       <FeedbackOptions onLeaveFeedback={this.onLeaveFeedback} />
+       <FeedbackOptions options={Object.keys(this.state)} onLeaveFeedback={this.onLeaveFeedback} />
         </Section>
         <Section title={"Statistics"}>
 {total ? (<Statistics good={good} neutral={neutral} bad={bad} total={total} positivePercentage={positiveFeedback}/>) :       (<Notification message="No feedback given" />)}
