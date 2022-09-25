@@ -26,13 +26,16 @@ export class App extends Component {
   }
   onLeaveFeedback = e => {
     const btn = e.target.name;
-    this.setState(prevState => ({ [btn]: prevState[btn] + 1 }));
+    this.setState(prevState => ({
+      [btn]: prevState[btn] + 1,
+    }));
   };
 
   render() {
     const { good, neutral, bad } = this.state;
     const total = this.countTotal();
-    const positiveFeedback = this.countPositivvePercentage();
+    const positiveFeedback =
+      this.countPositivvePercentage();
     return (
       <>
         <Section title={'Please leave feedback'}>

@@ -4,10 +4,9 @@
     justify-content: center;
 } */
 
-.statisticsItem{
-color: rgb(116, 40, 40);
-margin-bottom: 5px;
-font-size: 25px;
-font-weight: bold;
+.statisticsItem {
+  color: rgb(116, 40, 40);
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: bold;
 }
-
